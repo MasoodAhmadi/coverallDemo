@@ -4,19 +4,19 @@ on: [push, pull_request]
 
 jobs:
   test-linux:
-    uses: ./.github/workflows/test.yml
+    uses: ./.github/workflows/node.js.yml
     secrets:
       token: ${{ secrets.COVERALLS_REPO_TOKEN }}
 
   test-macos:
-    uses: ./.github/workflows/test.yml
+    uses: ./.github/workflows/node.js.yml
     with:
       os: macos
     secrets:
       token: ${{ secrets.COVERALLS_REPO_TOKEN }}
 
   test-windows:
-    uses: ./.github/workflows/test.yml
+    uses: ./.github/workflows/node.js.yml
     with:
       os: windows
     secrets:
