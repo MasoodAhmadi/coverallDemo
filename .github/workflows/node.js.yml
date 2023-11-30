@@ -30,7 +30,7 @@ jobs:
     steps:
       - name: Deploy to production
         env:
-          PRODUCTION_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "Deploying to production..."
           # Use $PRODUCTION_TOKEN in your deployment script
