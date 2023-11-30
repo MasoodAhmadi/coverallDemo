@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage && coveralls < coverage/lcov.info"
+    "test-cov": "jest",
+    "test-coveralls": "jest && shx cat ./coverage/lcov.info | node ./bin/coveralls.js --verbose",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
