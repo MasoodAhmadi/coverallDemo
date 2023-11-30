@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --verbose  --coverage && cat ./coverage/lcov.info | coveralls-next",
+    "test": "jest --verbose  --coverage && cat ./coverage/lcov.info | coveralls",
     "test:coveralls": "jest --coverage && coveralls < coverage/lcov.info"
   },
   "repository": {
