@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test-cov": "jest",
-    "test-coveralls": "jest && shx cat ./coverage/lcov.info | node ./bin/coveralls.js --verbose",
+    "test-coveralls": "jest --coverage && coveralls < coverage/lcov.info",
     "test": "jest"
   },
   "repository": {
